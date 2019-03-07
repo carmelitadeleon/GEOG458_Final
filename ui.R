@@ -1,24 +1,35 @@
 library(shiny)
-library(plotly)
 
 shinyUI(fluidPage(
-  
-  # Application title
-  titlePanel("United States Exports"),
+  tags$h1(class = "display-4", "Exports in the United States"),
+  tags$h5("By Kevin, Jin, Alisha, Carmelita, and Billy"),
   
   # Sidebar with a slider input for number of bins 
   sidebarLayout(
     sidebarPanel(
-       sliderInput("bins",
-                   "Number of bins:",
-                   min = 1,
-                   max = 50,
-                   value = 30)
+      
+      conditionalPanel(
+        condition = "input.tabs == 'Welcome!'"
+      ),
+      conditionalPanel(
+        condition = "input.tabs == 'INSERT'"
+      ),
+      conditionalPanel(
+        condition = "input.tabs == 'INSERT2'"
+      ),
+      conditionalPanel(
+        condition = "input.tabs == 'Bibliography'"
+      )
     ),
     
     # Show a plot of the generated distribution
     mainPanel(
-       plotOutput("distPlot")
+      tabsetPanel(
+        tabPanel("Welcome!"),
+        tabPanel("INSERT"),
+        tabPanel("INSERT2"),
+        tabPanel("Bibliography")
+      )
     )
   )
 ))
