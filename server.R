@@ -6,8 +6,8 @@ library(dplyr)
 suppressWarnings(warnings)
 
 #include other necessary files
-source("FreqMap.R")
 source("staticMap.R")
+source("FreqMap.R")
 
 shinyServer(function(input, output) {
   
