@@ -26,7 +26,7 @@ CreateInteractvMap <- function(data, lat, long, measure, txt1, popTitle, txt2, t
   }
   
   # Create a Leaflet map
-  leaflet(data) %>% 
+  leaflet() %>% 
     addProviderTiles("CartoDB.DarkMatter") %>%
     setView(lat = lat, lng = long, zoom = 3) %>%
     addPolygons(data = data,

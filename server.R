@@ -21,11 +21,17 @@ shinyServer(function(input, output) {
   })
   
   output$exportMap <- renderLeaflet({
-    CreateInteractvMap(interactvData, 18.43, -119.58, interactvData$abbreviatn, interactvData$NAME, "2017 Value: ",
-                       interactvData$val2017, interactvData$share17,
+    if (input$exportType != "All") {
+      filterExport <- interactvData %>%
+        filter(abbreviatn == input$exportType)
+    } else {
+      filterExport <- interactvData
+    }
+    
+    CreateInteractvMap(filterExport, 18.43, -119.58, filterExport$abbreviatn, filterExport$NAME, "2017 Value: ",
+                       filterExport$val2017, filterExport$share17,
                        "U.S. Export Commodity", NULL) %>%
       return()
   })
 })
-
 
