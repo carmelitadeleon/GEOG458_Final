@@ -42,7 +42,8 @@ shinyUI(fluidPage(
         tabPanel("Export Type", 
                  leafletOutput("exportMap", width = "720px", height="1000px")
         ),
-        tabPanel("INSERT2"),
+        tabPanel("LQ",
+                 img(src = "lqmap.png", height = 600, width = 720)),
         tabPanel("Bibliography")
       )
     )
