@@ -5,10 +5,11 @@ require(ggplot2)
 library(tmap)
 library(tmaptools)
 library(dplyr)
+library(randomcoloR)
 
 # read in the usa and data shape file
-usa <- st_read("data/cb_2017_us_state_500k.shp")
-location_q <- st_read("data/Static.shp")
+usa <- st_read("./data/cb_2017_us_state_500k.shp")
+location_q <- st_read("./data/Static.shp")
 
 # filter to 48 states, the other 4 states are not needed
 usa_48 <- usa %>%
@@ -18,6 +19,7 @@ lq_48 <- location_q %>%
 
 # creates a map displaying the united states and the location 
 # quotient values of the top 18 states
+
 states_data <- ggplot(data = lq_48) + 
   geom_sf(data = usa_48, fill = "gray", na.rm = TRUE) +
   geom_sf(aes(fill = LQ)) +
@@ -25,4 +27,4 @@ states_data <- ggplot(data = lq_48) +
   ggtitle("Top 16 States in Terms of Export Values (Location Quotient)")
 
 # since this is a static map, it is okay to export the map as a png
-lq_map <- ggsave("www/lqmap.png", plot = states_data, height = 7, width = 9)
+lq_map <- ggsave("./www/lqmap.png", plot = states_data, height = 7, width = 9)
