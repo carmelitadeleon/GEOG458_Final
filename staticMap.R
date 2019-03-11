@@ -22,7 +22,7 @@ states_data <- ggplot(data = lq_48) +
   geom_sf(data = usa_48, fill = "gray", na.rm = TRUE) +
   geom_sf(aes(fill = LQ)) +
   coord_sf(xlim = c(-128, -65), ylim = c(20, 55), expand = FALSE) + 
-  ggtitle("Top 16 States in Terms of Export Values (Location Quotient)")
+  ggtitle("Location Quotient of Civilian Aircraft Exports, by state, 2017")
 
 # since this is a static map, it is okay to export the map as a png
 lq_map <- ggsave("www/lqmap.png", plot = states_data, height = 7, width = 9)
