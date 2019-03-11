@@ -1,7 +1,7 @@
 #required libraries
 library(tidyverse)
 library(leaflet)
-#install.packages(randomcoloR)
+#install.packages("randomcoloR")
 library(randomcoloR)
 
 # Creates an interactive leaflet map that provides the user with the ability to
@@ -27,7 +27,7 @@ CreateInteractvMap <- function(data, lat, long, measure, txt1, popTitle, txt2, t
   
   # Create a Leaflet map
   leaflet() %>% 
-    addProviderTiles("CartoDB.DarkMatter") %>%
+    addProviderTiles("Esri.WorldGrayCanvas") %>%
     setView(lat = lat, lng = long, zoom = 3) %>%
     addPolygons(data = data,
                 opacity = 1,
@@ -36,9 +36,9 @@ CreateInteractvMap <- function(data, lat, long, measure, txt1, popTitle, txt2, t
                 color = "grey",
                 fillOpacity = 0.7,
                 fillColor = ~pal(measure),
-                popup = paste("Region: ", txt1, "<br>",
+                popup = paste("<b>Region:</b> ", txt1, "<br>",
                               popTitle, txt2, "<br>",
-                              "2017 Share Value: ", txt3, "<br>"),
+                              "<b>2017 Share Value:</b> ", txt3, "<br>"),
                 highlightOptions = highlightOptions(weight = 4, bringToFront = TRUE, opacity = 1,
                                                     color = "blue", sendToBack = TRUE)) %>%
     addLegend(position = "bottomright", pal = pal, values = measure,
