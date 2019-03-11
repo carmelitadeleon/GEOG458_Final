@@ -4,14 +4,22 @@ require(ggplot2)
 # install.packages("tmaptools)
 library(tmap)
 library(tmaptools)
+library(dplyr)
 
 # read in the usa and data shape file
-usa <- read_shape(
-  "data/cb_2017_us_state_500k.shp", as.sf = TRUE, stringsAsFactors = FALSE)
-location_q <- read_shape(
-  "data/Static.shp", as.sf = TRUE, stringsAsFactors = FALSE)
+usa <- st_read("data/cb_2017_us_state_500k.shp")
+location_q <- st_read("data/Static.shp")
+
+# filter to 48 states, the other 4 states are not needed
+usa_48 <- usa %>%
+    filter(!(NAME %in% c("Alaska", "District of Columbia", "Hawaii", "Puerto Rico")))
+lq_48 <- location_q %>%
+  filter(!(NAME %in% c("Alaska", "District of Columbia", "Hawaii", "Puerto Rico")))
 
 # creates a map displaying the united states and the location 
 # quotient values of the top 18 states
-state_data <- ggplot() + geom_sf(data = usa, fill = "gray", na.rm = TRUE) +
-  geom_sf(data = location_q, fill = "blue", na.rm = TRUE)
+states_data <- ggplot(data = lq_48) + 
+  geom_sf(data = usa_48, fill = "gray", na.rm = TRUE) +
+  geom_sf(aes(fill = LQ)) +
+  coord_sf(xlim = c(-128, -65), ylim = c(20, 55), expand = FALSE) + 
+  ggtitle("Top 16 States in Terms of Export Values (Location Quotient)")
