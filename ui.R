@@ -43,7 +43,7 @@ shinyUI(fluidPage(
                  leafletOutput("exportMap", width = "720px", height="1000px")
         ),
         tabPanel("LQ",
-                 img(src = "lqmap.png", height = 600, width = 720)),
+                 img(src = "lqmap_display.png", height = 600, width = 720)),
         tabPanel("Bibliography")
       )
     )
