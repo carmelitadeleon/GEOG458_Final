@@ -25,4 +25,4 @@ states_data <- ggplot(data = lq_48) +
   ggtitle("Location Quotient of Civilian Aircraft Exports, by state, 2017")
 
 # since this is a static map, it is okay to export the map as a png
-lq_map <- ggsave("www/lqmap_display.png", plot = states_data, height = 7, width = 9)
+lq_map <- ggsave("www/lqmap.png", plot = states_data, height = 7, width = 9)
