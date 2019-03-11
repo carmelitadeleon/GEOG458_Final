@@ -25,7 +25,7 @@ shinyUI(fluidPage(
                     choices = exportTp)
       ),
       conditionalPanel(
-        condition = "input.tabs == 'INSERT2'"
+        condition = "input.tabs == 'LQ'"
       ),
       conditionalPanel(
         condition = "input.tabs == 'Bibliography'"
