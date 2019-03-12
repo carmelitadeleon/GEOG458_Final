@@ -36,7 +36,7 @@ CreateInteractvMap <- function(data, lat, long, measure, txt1, popTitle, txt2, t
                 color = "grey",
                 fillOpacity = 0.7,
                 fillColor = ~pal(measure),
-                popup = paste("<b>Region:</b> ", txt1, "<br>",
+                popup = paste("<b>State:</b> ", txt1, "<br>",
                               popTitle, txt2, "<br>",
                               "<b>2017 Share Value:</b> ", txt3, "<br>"),
                 highlightOptions = highlightOptions(weight = 4, bringToFront = TRUE, opacity = 1,
