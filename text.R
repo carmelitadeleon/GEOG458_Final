@@ -34,6 +34,19 @@ prodAnalysisP2 <- paste(" reports that the top countries to import this specific
                         " exporter of diamonds and nonindustrial work. Nonindustrial and work is defined as",
                         " unmounted and sawn, cleaved, or bruted diamonds")
 
+lqOverview <- "This map presents a location quotient pertaining to civilian craft exports in the United States. 
+                      Location quotient is a valuable way of quantifying how concentrated a particular industry is in a region as compared to the nation. It can be used:
+<ul><li>To determine which industries make the regional economy unique.</li>
+                    <li>To identify the 'export orientation' of an industry and the most export-oriented industries in the region.</li>
+                    <li>To identify emerging export industries beginning to bring money into the region.</li>
+                    <li>To find endangered export industries that could erode the region's economic base.</li></ul>
+Equation:<br><i><font-size = '2'>LQ = Regional Industry Concentration / National Industry Concentration</font></i><br>
+
+                    As shown on the map, states that have aircrafts as their #1 export are displayed in the top exports map - there are 16 in total (these states are in labels).
+                    "
+lqAnalysis <- "The state with the highest location quotient value is Washington state. This makes sense because Boeing was first originated here in Washington state. 
+                    <br>"
+
 interactvBib <- paste("This repository contains R script that would take in multiple",
                       " parameters to output an interactive map.")
 
