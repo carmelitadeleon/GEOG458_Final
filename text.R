@@ -37,6 +37,8 @@ prodAnalysisP2 <- paste(" reports that the top countries to import this specific
 interactvBib <- paste("This repository contains R script that would take in multiple",
                       " parameters to output an interactive map.")
 
+staticBib <- paste("")
+
 pythonBib <- paste("This repository contains python script that processed, cleaned, and ",
                    "outputted the data we are utilizing for a closer examination.")
 
