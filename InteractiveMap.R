@@ -20,7 +20,7 @@ library(randomcoloR)
 CreateInteractvMap <- function(data, lat, long, measure, txt1, popTitle, txt2, txt3, measureTitle, bin) {
   # Check that the bin is empty and create a random distinct color palette accordingly
   if (!is.null(bin)) {
-    pal <- colorBin(palette = "Blues", domain = measure, bins = bin)
+    pal <- colorBin(palette = "Purples", domain = measure, bins = bin)
   } else {
     pal <- colorFactor(distinctColorPalette(24), domain = measure)
   }
