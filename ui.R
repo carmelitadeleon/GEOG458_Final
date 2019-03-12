@@ -16,6 +16,9 @@ shinyUI(fluidPage(
         condition = "input.tabs == 'Welcome!'"
       ),
       conditionalPanel(
+        condition = "input.tabs == 'Data'"
+      ),
+      conditionalPanel(
         condition = "input.tabs == 'Export Frequency'"
       ),
       conditionalPanel(
@@ -36,6 +39,7 @@ shinyUI(fluidPage(
     mainPanel(
       tabsetPanel(id = "tabs",
         tabPanel("Welcome!"),
+        tabPanel("Data"),
         tabPanel("Export Frequency",
                  leafletOutput("freqMap", width="720px",height="680px")
         ),
@@ -44,6 +48,7 @@ shinyUI(fluidPage(
         ),
         tabPanel("LQ",
                  img(src = "lqmap.png", height = 600, width = 720)),
+        tabPanel("Temporal Change"), 
         tabPanel("Bibliography")
       )
     )
