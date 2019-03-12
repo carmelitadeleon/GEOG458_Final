@@ -15,6 +15,12 @@ shinyUI(fluidPage(
   sidebarLayout(
     sidebarPanel(
       conditionalPanel(
+        condition = "input.tabs == 'Welcome'"
+      ),
+      conditionalPanel(
+        condition = "input.tabs == 'Data'"
+      ),
+      conditionalPanel(
         condition = "input.tabs == 'Export Values'",
         
         h3("Overview"),
@@ -58,10 +64,12 @@ shinyUI(fluidPage(
         )
       ),
       conditionalPanel(
-        condition = "input.tabs == 'Data'"
-      ),
-      conditionalPanel(
-        condition = "input.tabs == 'LQ'"
+        condition = "input.tabs == 'LQ'",
+        h3("Overview"),
+        HTML(lqOverview),
+        h3("Analysis"),
+        HTML(lqAnalysis)
+        
       ),
       conditionalPanel(
         condition = "input.tabs == 'Temporal'"
@@ -75,7 +83,9 @@ shinyUI(fluidPage(
     mainPanel(
       tabsetPanel(id = "tabs",
                   tabPanel("Welcome!"),
-                  tabPanel("Data"),
+                  tabPanel("Data",
+                           h3("Overview"),
+                           h3("Data Processing")),
                   tabPanel("Export Values",
                            HTML("<p align= 'left' style='padding: 1em 7em 0em 15em'>
                                 <font size= '5'>United States Export Values</font></p>"),
