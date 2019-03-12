@@ -20,7 +20,11 @@ shinyUI(fluidPage(
         h3("Overview"),
         tags$div(class="about",
                  tags$p(evOverview)
-        )
+        ),
+        
+        h3("Analysis"),
+        tags$div(class="analysis",
+                 tags$p(evAnalysis))
       ),
       conditionalPanel(
         condition = "input.tabs == 'Export Type'",
@@ -31,6 +35,18 @@ shinyUI(fluidPage(
         h3("Overview"),
         tags$div(class="about",
                  tags$p(prodOverview)
+        ),
+        
+        h3("Analysis"),
+        tags$div(class="analysis",
+                 tags$p(prodAnalysisP1,
+                        tags$p(tags$a(href="https://www.flexport.com/data/hs-code/880000-civilian-aircraft-engines-and-parts",
+                                      "FlexPort"),
+                               prodAnalysisP2,
+                               tags$a(href="https://www.cbsa-asfc.gc.ca/publications/dm-md/d10/d10-17-41-eng.pdf",
+                                      "(Canada Border Services Agency)")
+                        )
+                 )
         ),
         
         h3("Search Export Product"),
@@ -67,13 +83,39 @@ shinyUI(fluidPage(
                   ),
                   tabPanel("Export Type",
                            HTML("<p align= 'left' style='padding: 1em 7em 0em 14em'>
-                                <font size= '5'>United States Export Products</font></p>"),
+                                <font size= '5'>United States Exporting Products</font></p>"),
                            leafletOutput("exportMap", width = "720px", height="1000px")
                   ),
                   tabPanel("LQ",
                            img(src = "lqmap.png", height = 600, width = 720)),
                   tabPanel("Temporal"),
-                  tabPanel("Bibliography")
+                  tabPanel("Bibliography",
+                           h3("Maps"),
+                           tags$div(class="cite",
+                                    tags$p(interactvBib),
+                                    tags$a(href="https://github.com/carmelitadeleon/GEOG458_Final/blob/master/InteractiveMap.R",
+                                           "InteractiveMap.R")
+                           ),
+                           h3("Shiny"),
+                           tags$div(class="cite",
+                                    tags$p(serverBib),
+                                    tags$a(href="https://github.com/carmelitadeleon/GEOG458_Final/blob/master/server.R",
+                                           "Server.R"),
+                                    tags$p(uiBib),
+                                    tags$a(href="https://github.com/carmelitadeleon/GEOG458_Final/blob/master/ui.R",
+                                           "UI.R"),
+                                    tags$p(txtBib),
+                                    tags$a(href="https://github.com/carmelitadeleon/GEOG458_Final/blob/master/text.R",
+                                           "Text.R")
+                           ),
+                           h3("Data"),
+                           tags$div(class="cite",
+                                    tags$p(pythonBib),
+                                    tags$a(href="https://github.com/carmelitadeleon/GEOG458_Final/blob/master/Data_Processing.ipynb",
+                                           "Data_Processing.ipynb")
+                           )
+                           
+                  )
       )
     )
   )
