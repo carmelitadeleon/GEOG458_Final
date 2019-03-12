@@ -21,6 +21,8 @@ lq_48 <- location_q %>%
 states_data <- ggplot(data = lq_48) + 
   geom_sf(data = usa_48, fill = "gray", na.rm = TRUE) +
   geom_sf(aes(fill = LQ)) +
+  scale_fill_gradientn(colours = c("#769aff", "#2760ff", "#00299d", "#001a62")) +
+  geom_sf_label(aes(label = STUSPS)) +
   coord_sf(xlim = c(-128, -65), ylim = c(20, 55), expand = FALSE) + 
   ggtitle("Location Quotient of Civilian Aircraft Exports, by state, 2017")
 
