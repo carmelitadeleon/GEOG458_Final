@@ -42,12 +42,20 @@ shinyUI(fluidPage(
         )
       ),
       conditionalPanel(
+        condition = "input.tabs == 'LQ'",
+        HTML("<br><p>For more information regarding this export please look up the hs code 
+             <a href='https://www.foreign-trade.com/reference/hscode.htm'>here</a></p>")
+        ),
+      conditionalPanel(
         condition = "input.tabs == 'LQ'"
+      ),
+      conditionalPanel(
+        condition = "input.tabs == 'Temporal'"
       ),
       conditionalPanel(
         condition = "input.tabs == 'Bibliography'"
       )
-    ),
+      ),
     
     # Show a plot of the generated distribution
     mainPanel(
@@ -56,16 +64,19 @@ shinyUI(fluidPage(
                   tabPanel("Export Values",
                            HTML("<p align= 'left' style='padding: 1em 7em 0em 15em'>
                       <font size= '5'>United States Export Values</font></p>"),
+                           HTML("<p align= 'left' style='padding: 1em 7em 0em 10em'>
+                                <font size= '5'>United States Export Frequency Values</font></p>"),
                            leafletOutput("freqMap", width="720px",height="680px")
-                  ),
+                           ),
                   tabPanel("Export Type",
                            HTML("<p align= 'left' style='padding: 1em 7em 0em 14em'><font size= '5'>United States Export Types</font></p>"),
                            leafletOutput("exportMap", width = "720px", height="1000px")
                   ),
                   tabPanel("LQ",
                            img(src = "lqmap.png", height = 600, width = 720)),
+                  tabPanel("Temporal"),
                   tabPanel("Bibliography")
       )
-    )
-  )
+      )
+)
 ))
