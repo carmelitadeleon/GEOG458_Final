@@ -42,9 +42,7 @@ shinyUI(fluidPage(
         )
       ),
       conditionalPanel(
-        condition = "input.tabs == 'LQ'",
-        HTML("<br><p>For more information regarding this export please look up the hs code 
-             <a href='https://www.foreign-trade.com/reference/hscode.htm'>here</a></p>")
+        condition = "input.tabs == 'Data'"
       ),
       conditionalPanel(
         condition = "input.tabs == 'LQ'"
@@ -61,6 +59,7 @@ shinyUI(fluidPage(
     mainPanel(
       tabsetPanel(id = "tabs",
                   tabPanel("Welcome!"),
+                  tabPanel("Data"),
                   tabPanel("Export Values",
                            HTML("<p align= 'left' style='padding: 1em 7em 0em 15em'>
                                 <font size= '5'>United States Export Values</font></p>"),
