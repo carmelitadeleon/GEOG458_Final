@@ -3,8 +3,24 @@ library(leaflet)
 
 source("server.R")
 source("text.R")
+source("timeseries.R")
 
 exportTp <- append("All", levels(interactvData$abbreviatn))
+
+ui <- fluidPage(
+  tags$style(type = "text/css", "
+             .irs-bar {width: 100%; height: 25px; background: black; border-top: 1px solid black; border-bottom: 1px solid black;}
+             .irs-bar-edge {background: black; border: 1px solid black; height: 25px; border-radius: 0px; width: 20px;}
+             .irs-line {border: 1px solid black; height: 25px; border-radius: 0px;}
+             .irs-grid-text {font-family: 'arial'; color: white; bottom: 17px; z-index: 1;}
+             .irs-grid-pol {display: none;}
+             .irs-max {font-family: 'arial'; color: black;}
+             .irs-min {font-family: 'arial'; color: black;}
+             .irs-single {color:black; background:#6666ff;}
+             .irs-slider {width: 700px; height: 100px; top: 22px;}
+             "),
+  uiOutput("testSlider")
+)
 
 shinyUI(fluidPage(
   theme = "bootstrap.css",
@@ -88,7 +104,25 @@ shinyUI(fluidPage(
                   ),
                   tabPanel("LQ",
                            img(src = "lqmap.png", height = 600, width = 720)),
-                  tabPanel("Temporal"),
+                  tabPanel("Temporal",
+                           titlePanel("Time Series Map"),
+                           sidebarLayout(
+                             
+                             # Sidebar panel that contains a two number inputs for adjusting the minimum and 
+                             # maximum year used in the map
+                             
+                             
+                             sliderInput(inputId = "test", label = h4("Year Range"), min = 2014, 
+                                         max = 2017, value = 2014, step = 1),
+                             
+                             
+                             
+                             # Show a usa state map of yearly exports with high airline productions
+                             mainPanel(
+                               plotOutput("yearMap", width = "1000px", height = "1000px")
+                             )
+                           )  
+                  ),
                   tabPanel("Bibliography",
                            h3("Maps"),
                            tags$div(class="cite",
