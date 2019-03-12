@@ -45,7 +45,7 @@ shinyUI(fluidPage(
         condition = "input.tabs == 'LQ'",
         HTML("<br><p>For more information regarding this export please look up the hs code 
              <a href='https://www.foreign-trade.com/reference/hscode.htm'>here</a></p>")
-        ),
+      ),
       conditionalPanel(
         condition = "input.tabs == 'LQ'"
       ),
@@ -55,7 +55,7 @@ shinyUI(fluidPage(
       conditionalPanel(
         condition = "input.tabs == 'Bibliography'"
       )
-      ),
+    ),
     
     # Show a plot of the generated distribution
     mainPanel(
@@ -63,13 +63,12 @@ shinyUI(fluidPage(
                   tabPanel("Welcome!"),
                   tabPanel("Export Values",
                            HTML("<p align= 'left' style='padding: 1em 7em 0em 15em'>
-                      <font size= '5'>United States Export Values</font></p>"),
-                           HTML("<p align= 'left' style='padding: 1em 7em 0em 10em'>
-                                <font size= '5'>United States Export Frequency Values</font></p>"),
+                                <font size= '5'>United States Export Values</font></p>"),
                            leafletOutput("freqMap", width="720px",height="680px")
-                           ),
+                  ),
                   tabPanel("Export Type",
-                           HTML("<p align= 'left' style='padding: 1em 7em 0em 14em'><font size= '5'>United States Export Types</font></p>"),
+                           HTML("<p align= 'left' style='padding: 1em 7em 0em 14em'>
+                                <font size= '5'>United States Export Products</font></p>"),
                            leafletOutput("exportMap", width = "720px", height="1000px")
                   ),
                   tabPanel("LQ",
@@ -77,6 +76,6 @@ shinyUI(fluidPage(
                   tabPanel("Temporal"),
                   tabPanel("Bibliography")
       )
-      )
-)
+    )
+  )
 ))
