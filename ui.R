@@ -78,10 +78,9 @@ shinyUI(fluidPage(
         # maximum year used in the map
         sliderInput(inputId = "test", label = h4("Year Range"), min = 2014, 
                     max = 2017, value = 2014, step = 1, sep =""),
-        h3("Overview"),
-        HTML(tempOverview),
         h3("Analysis"),
         HTML(tempAnalysis)
+        
       ),
       conditionalPanel(
         condition = "input.tabs == 'Bibliography'"
@@ -119,6 +118,8 @@ shinyUI(fluidPage(
                   tabPanel("LQ",
                            img(src = "lqmap.png", height = 600, width = 720)),
                   tabPanel("Temporal",
+                           h3("Overview"),
+                           HTML(tempOverview),
                            HTML("<p align= 'left' style='padding: 1em 7em 0em 18em'>
                                 <font size= '5'>United States Production Values</font></p>"),
                            # Show a usa state map of yearly exports with high airline productions
