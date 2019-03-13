@@ -56,26 +56,20 @@ shinyUI(fluidPage(
         
         h3("Overview"),
         tags$div(class="about",
-                 tags$p(prodOverview)
+                 tags$p(HTML(prodOverview))
         ),
         
         h3("Analysis"),
         tags$div(class="analysis",
-                 tags$p(prodAnalysisP1,
-                        tags$p(tags$a(href="https://www.flexport.com/data/hs-code/880000-civilian-aircraft-engines-and-parts",
-                                      "FlexPort"),
-                               prodAnalysisP2,
-                               tags$a(href="https://www.cbsa-asfc.gc.ca/publications/dm-md/d10/d10-17-41-eng.pdf",
-                                      "(Canada Border Services Agency)")
-                        )
-                 )
+                 tags$p(HTML(prodAnalysis))
         ),
         
         h3("Search Export Product"),
         textOutput("hsCode"),
         tags$div(class="lookup",
-                 tags$p(HTML("<br>"), "For more information regarding this export please look up the HS code",
+                 tags$p(HTML("<br>For more information regarding this export please look up the HS code",
                         tags$a(href='https://www.foreign-trade.com/reference/hscode.htm', "here")
+                 )
                  )
         )
       ),
@@ -135,28 +129,19 @@ shinyUI(fluidPage(
                   ),
                   tabPanel("Bibliography",
                            h3("Maps"),
-                           tags$div(class="cite",
-                                    tags$p(interactvBib),
-                                    tags$a(href="https://github.com/carmelitadeleon/GEOG458_Final/blob/master/InteractiveMap.R",
-                                           "InteractiveMap.R")
+                           tags$ul(class="cite",
+                                   tags$p(HTML(interactvBib)),
+                                   tags$p(HTML(timeseriesBib))
                            ),
                            h3("Shiny"),
-                           tags$div(class="cite",
-                                    tags$p(serverBib),
-                                    tags$a(href="https://github.com/carmelitadeleon/GEOG458_Final/blob/master/server.R",
-                                           "Server.R"),
-                                    tags$p(uiBib),
-                                    tags$a(href="https://github.com/carmelitadeleon/GEOG458_Final/blob/master/ui.R",
-                                           "UI.R"),
-                                    tags$p(txtBib),
-                                    tags$a(href="https://github.com/carmelitadeleon/GEOG458_Final/blob/master/text.R",
-                                           "Text.R")
+                           tags$ul(class="cite",
+                                    tags$p(HTML(serverBib)),
+                                    tags$p(HTML(uiBib)),
+                                    tags$p(HTML(txtBib))
                            ),
                            h3("Data"),
-                           tags$div(class="cite",
-                                    tags$p(pythonBib),
-                                    tags$a(href="https://github.com/carmelitadeleon/GEOG458_Final/blob/master/Data_Processing.ipynb",
-                                           "Data_Processing.ipynb")
+                           tags$ul(class="cite",
+                                    tags$p(HTML(pythonBib))
                            )
                            
                   )
