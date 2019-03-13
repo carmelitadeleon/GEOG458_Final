@@ -69,19 +69,19 @@ to the unpredictability/instability of oil markets, the state likely invests sub
 time and effort in protecting its share in the oil markets.</p>"
 
 # footer for the export commodity map
-footer_prod <- "<br><br><br><br>Sources:<br><a href='https://www.foreign-trade.com/reference/hscode.htm'>https://www.foreign-trade.com/reference/hscode.htm</a>"
+footer_prod <- "<br><br>Sources:<br><font size ='1'><a href='https://www.foreign-trade.com/reference/hscode.htm'>https://www.foreign-trade.com/reference/hscode.htm</a></font>"
 
 # This text is for the fifth tab called LQ
-lqOverview <- "This map presents a location quotient pertaining to civilian aircraft exports in the United States. 
+lqOverview <- "This map presents a location quotient pertaining to 'civilian aircraft, engines, and parts' exports in the United States. 
                       Location quotient is a valuable way of quantifying how concentrated a particular industry is in a region as compared to the nation. It can be used:
 <ul><li>To determine which industries make the regional economy unique.</li>
 <li>To identify the 'export orientation' of an industry and the most export-oriented industries in the region.</li>
 <li>To identify emerging export industries beginning to bring money into the region.</li>
 <li>To find endangered export industries that could erode the region's economic base.</li></ul>
 Equation:<br><i><font-size = '2'>LQ = Regional Industry Concentration / National Industry Concentration</font></i><br><br>
-As shown on the map, states that have aircrafts as their #1 export are displayed in the top exports map - there are 16 in total (these states are in labels)."
+As shown on the map, states that have civilian aircrafts as their #1 export are displayed in the top exports map - there are 16 in total (these states are in labels)."
 
-lqAnalysis <- "This map displays the location quotient values for civilian aircraft exports because it appears most frequently as the top exports among the 50 states & 2 regions. According to the Export Type map, there are 16 states in total that have civilian aircrafts as their top export. 
+lqAnalysis <- "This map displays the location quotient values for 'civilian aircraft, engines, and parts' exports because it appears most frequently as the top exports among the 50 states & 2 regions. According to the Export Type map, there are 16 states in total that have civilian aircrafts as their top export. 
 
 Washington state has the highest location quotient for civilian aircraft exports - this means that the share of civilian aircraft exports in Washington's total exporting economy is much higher than the share of civilian aircraft exports in the US' total exporting economy. Civilian aircraft exports are therefore particularly important to Washington's exports economy. 
 
