@@ -61,7 +61,7 @@ shinyUI(fluidPage(
         h3("Search Export Product"),
         textOutput("hsCode"),
         HTML("<p><br>For more information regarding this export
-             please look up the HS code<a href='https://www.foreign-trade.com/reference/hscode.htm'>here</a>
+             please look up the HS code <a href='https://www.foreign-trade.com/reference/hscode.htm'>here</a>
              </p>")
       ),
       conditionalPanel(
@@ -113,7 +113,8 @@ shinyUI(fluidPage(
                   tabPanel("Export Type",
                            HTML("<p align= 'left' style='padding: 1em 7em 0em 14em'>
                                 <font size= '5'>United States Exporting Products</font></p>"),
-                           leafletOutput("exportMap", width = "720px", height="1000px")
+                           leafletOutput("exportMap", width = "720px", height="1000px"),
+                           HTML(prodfooter_intro)
                   ),
                   tabPanel("LQ",
                            img(src = "lqmap.png", height = 600, width = 720)),

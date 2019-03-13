@@ -36,17 +36,15 @@ to other states. Clicking on a state reveals a pop up that lists the state's top
 commodity and its share value in 2017 (the % share the top commodity has out of the state's
 total exports).</p>"
 
-evAnalysis <- "<p>Based on the map, the top three exporting states are California,
-Texas, and New York. Of these three states, New York has the greatest share value
-of 15.4462. In second place is Texas with a share value of 8.7495 and in last is 
-California with a value of 4.1666. While these three states play a major role in the US’
+evAnalysis <- "<p>Based on the map, the top three exporting states are: <ol><li>New York: 15.4462 share value</li><li>
+Texas: 8.7495 share value</li><li>California: 4.1666 share value</ol> While these three states play a major role in the US’
 exporting economy, the degree to which they rely on their top export as a source of revenue
-varies widely. Knowing this information can serve as a basis for additional investigation on
-the diversification of state economies, why the state and federal government has political
+varies widely. With this information in mind, it can serve as a basis for additional investigation on
+the diversification of state economies. For instance, why the state and federal government has political
 interests in certain industries, and the perceived importance/relevance of a state on a national
-level. <br>Observe that states in the Midwest and most of the Western side of the U.S. have a
-lower export value in comparison to the Northeast and Southeast of the U.S - this suggests
-that the East Coast is immensely important to the US’ exporting economy.</p>"
+level.</p><p>In reference to the map, we can observe that states in the Midwest and most of the Western side of the U.S. have a
+lower export value in comparison to the Northeast and Southeast of the U.S - which suggests
+that the East Coast is extremely essential to the US’ exporting economy.</p>"
 
 # This text is for the fourth tab called Export Type
 prodOverview <- "<p>The default map shows all 24 export types and the corresponding state
@@ -57,17 +55,21 @@ states that have the selected export type as their top export.</p>"
 
 prodAnalysis <- "<p>The most common top export type is “civilian aircrafts, engines,
 and parts”. These products are exported from 16 different states across the US, making 
-it perhaps the most important export for state economies.<br>Recall from the Export Values
-Map the top three exporting states were identified as California, Texas, and New York.
-California’s top export is civilian aircrafts, but its low share value (4.1666) suggests
-that California’s exports are well diversified and aircrafts may not be what the state’s
-export economy is commonly associated with. New York’s top export is cut and shaped diamonds
-and has a very high share value (15.4462); given the price and markup of non-industrial diamonds,
+it perhaps the most important export for state economies.</p><p>Recall from the Export Values
+Map the top three exporting states were identified as:<ul><li>California: Civilian aircrafts
+</li><li>Texas: Petroleum</li><li>New York: Diamonds</li></ul>
+Although California’s top export is civilian aircrafts, it has a low share value of 4.1666.
+This suggests that California’s exports are well diversified and aircrafts may not be what the state’s
+export economy is commonly associated with. Similarly, New York’s top export is cut and shaped diamonds
+and has a very high share value (15.4462). Taking into account of the price and markup of non-industrial diamonds,
 we can deduce that this is the most expensive and popular good that NY exports. Texas’
-top export is petroleum, which also has a high share value (8.7495); this means that Texas
-relies more heavily on petroleum in its exporting economy and due to the unpredictability/instability
-of oil markets, the state likely invests substantial time and effort in protecting its
-share in the oil markets.</p>"
+top export is petroleum, which also has a high share value (8.7495). This means that Texas
+relies more heavily on petroleum in its exporting economy. Nonetheless, due
+to the unpredictability/instability of oil markets, the state likely invests substantial
+time and effort in protecting its share in the oil markets.</p>"
+
+# footer for the export commodity map
+prodfooter_intro <- "<br><br><br><br>Sources:<br><a href='https://www.foreign-trade.com/reference/hscode.htm'>https://www.foreign-trade.com/reference/hscode.htm</a>"
 
 # This text is for the fifth tab called LQ
 lqOverview <- "This map presents a location quotient pertaining to civilian craft exports in the United States. 
