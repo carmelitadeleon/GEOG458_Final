@@ -72,7 +72,7 @@ time and effort in protecting its share in the oil markets.</p>"
 prodfooter_intro <- "<br><br><br><br>Sources:<br><a href='https://www.foreign-trade.com/reference/hscode.htm'>https://www.foreign-trade.com/reference/hscode.htm</a>"
 
 # This text is for the fifth tab called LQ
-lqOverview <- "This map presents a location quotient pertaining to civilian craft exports in the United States. 
+lqOverview <- "This map presents a location quotient pertaining to civilian aircraft exports in the United States. 
                       Location quotient is a valuable way of quantifying how concentrated a particular industry is in a region as compared to the nation. It can be used:
 <ul><li>To determine which industries make the regional economy unique.</li>
 <li>To identify the 'export orientation' of an industry and the most export-oriented industries in the region.</li>
