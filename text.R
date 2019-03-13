@@ -11,7 +11,7 @@ intro3 <- "<b>Why are we asking this question?</b><br>
 <li>However, little is understood about <b>where</b> the US' exported goods originate from and <b>why</b> they originate where they do.</li>
 <li>Our project aims to explore these questions and provide the basis for further investigation and research.</li></ul>"
 
-footer_intro <- "<br><br><br><br>Sources:<br><a href='https://www.investopedia.com/terms/e/export.asp'>https://www.investopedia.com/terms/e/export.asp</a><br><a href='https://www.investopedia.com/terms/c/capitalgoods.asp'>https://www.investopedia.com/terms/c/capitalgoods.asp</a><br><a href='https://www.rferl.org/a/why-are-commodity-exporters-in-trouble/27208195.html'>https://www.rferl.org/a/why-are-commodity-exporters-in-trouble/27208195.html</a>"
+footer_intro <- "<br><br><br><br>Sources:<br><font size = '1'><a href='https://www.investopedia.com/terms/e/export.asp'>https://www.investopedia.com/terms/e/export.asp</a><br><a href='https://www.investopedia.com/terms/c/capitalgoods.asp'>https://www.investopedia.com/terms/c/capitalgoods.asp</a><br><a href='https://www.rferl.org/a/why-are-commodity-exporters-in-trouble/27208195.html'>https://www.rferl.org/a/why-are-commodity-exporters-in-trouble/27208195.html</a></font>"
 
 # This text is for the second tab called Data
 dataOverview <- "   Data we used comes from the US Census Bureau Foreign Trade/ State Trade Data
@@ -26,9 +26,8 @@ Some of the consequences for the discrepancy between production and export origi
 
 dataProcess <- "    Before joining the data to a shapefile of US States, the data needed to be subsetted using a 'select by' logic to include only the top export for each state to avoid a one-to-many relationship and the problems associated with that. We had to further subset the data to include only those states whose top export is Civilian Aircraft in order to do a meaningful Location Quotient analysis. The location quotient requires 4 values to be calculated, two of which are already present in the original data, while the other two must be appended on and comes from the USA Trade Online website. Another column was added to the dataset that calculates the LQ from the appropriate columns for each row."
 
-footer_data <- "<br><br><br><br><br><font-size = '0.5'>Sources:<br><a href=' https://www.census.gov/foreign-trade/aip/elom.html'>https://www.census.gov/foreign-trade/aip/elom.html</a></font><br>
-<a href='https://www.census.gov/foreign-trade/statistics/state/data/exstall.xls'>https://www.census.gov/foreign-trade/statistics/state/data/exstall.xls</a><br>
-<a href='https://https://usatrade.census.gov'>https://https://usatrade.census.gov</a>"
+footer_data <- "<br><br><br><br>Sources:<br><font size = '1'><a href='https://www.census.gov/foreign-trade/aip/elom.html'>https://www.census.gov/foreign-trade/aip/elom.html</a><br>
+<a href='https://www.census.gov/foreign-trade/statistics/state/data/exstall.xls'>https://www.census.gov/foreign-trade/statistics/state/data/exstall.xls</a><br><a href='https://https://usatrade.census.gov'>https://https://usatrade.census.gov</a></font>"
 
 # This text is for the third tab called Export Values
 evOverview <- "<p>This map displays each US state's export values in millions of dollars.
@@ -78,13 +77,15 @@ lqOverview <- "This map presents a location quotient pertaining to civilian craf
 <li>To identify emerging export industries beginning to bring money into the region.</li>
 <li>To find endangered export industries that could erode the region's economic base.</li></ul>
 Equation:<br><i><font-size = '2'>LQ = Regional Industry Concentration / National Industry Concentration</font></i><br><br>
-As shown on the map, states that have aircrafts as their #1 export are displayed in the top exports map - there are 16 in total (these states are in labels).
-"
+As shown on the map, states that have aircrafts as their #1 export are displayed in the top exports map - there are 16 in total (these states are in labels)."
+
 lqAnalysis <- "This map displays the location quotient values for civilian aircraft exports because it appears most frequently as the top exports among the 50 states & 2 regions. According to the Export Type map, there are 16 states in total that have civilian aircrafts as their top export. 
 
 Washington state has the highest location quotient for civilian aircraft exports - this means that the share of civilian aircraft exports in Washington's total exporting economy is much higher than the share of civilian aircraft exports in the US' total exporting economy. Civilian aircraft exports are therefore particularly important to Washington's exports economy. 
 
 Further investigation reveals why civilian aircrafts comprise such a large share of Washington's exports - one of the largest aircraft manufacturers in the world, Boeing, has its 'Boeing Commercial Airplanes (BCA) division, which designs, assembles, markets, and sells jet airliners and business jets' headquartered in Renton, Washington. Interestingly, despite Boeing 'the largest exporter in the United States by dollar value', WA state still ends up with a very high LQ, which confirms that the state's economy relies much more heavily on civilian aircraft exports than the national economy does. "
+
+footer_lq <- "<br><br>Sources:<br><font size='1'><a href='https://www.economicmodeling.com/2011/10/14/understanding-location-quotient-2/'>https://www.economicmodeling.com/2011/10/14/understanding-location-quotient-2/</a><br><a href='https://en.wikipedia.org/wiki/Boeing_Commercial_Airplanes'>https://en.wikipedia.org/wiki/Boeing_Commercial_Airplanes</a><br><a href='https://usatoday30.usatoday.com/money/industries/manufacturing/2009-03-25-boeing-recession_N.htm'>https://usatoday30.usatoday.com/money/industries/manufacturing/2009-03-25-boeing-recession_N.htm</a></font>"
 
 # This text is for the sixth tab called Temporal
 tempOverview <- "<p>This map displays the production value of the United States' top 16
