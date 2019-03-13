@@ -31,7 +31,8 @@ shinyUI(fluidPage(
   sidebarLayout(
     sidebarPanel(
       conditionalPanel(
-        condition = "input.tabs == 'Welcome'"
+        condition = "input.tabs == 'Welcome!'"
+        
       ),
       conditionalPanel(
         condition = "input.tabs == 'Data'"
@@ -90,7 +91,10 @@ shinyUI(fluidPage(
     # Show a plot of the generated distribution
     mainPanel(
       tabsetPanel(id = "tabs",
-                  tabPanel("Welcome!"),
+                  tabPanel("Welcome!",
+                           HTML(intro),
+                           HTML(intro2),
+                           HTML(intro3)),
                   tabPanel("Data",
                            h3("Overview"),
                            HTML(dataOverview),
