@@ -92,6 +92,7 @@ shinyUI(fluidPage(
     mainPanel(
       tabsetPanel(id = "tabs",
                   tabPanel("Welcome!",
+                           h3("Introduction"),
                            HTML(intro),
                            HTML(intro2),
                            HTML(intro3)),
