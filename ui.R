@@ -79,8 +79,8 @@ shinyUI(fluidPage(
         sliderInput(inputId = "test", label = h4("Year Range"), min = 2014, 
                     max = 2017, value = 2014, step = 1, sep =""),
         h3("Analysis"),
-        HTML(tempAnalysis)
-        
+        HTML(tempAnalysis),
+        HTML(footer_temp)
       ),
       conditionalPanel(
         condition = "input.tabs == 'Bibliography'"
