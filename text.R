@@ -26,9 +26,9 @@ Some of the consequences for the discrepancy between production and export origi
 
 dataProcess <- "    Before joining the data to a shapefile of US States, the data needed to be subsetted using a 'select by' logic to include only the top export for each state to avoid a one-to-many relationship and the problems associated with that. We had to further subset the data to include only those states whose top export is Civilian Aircraft in order to do a meaningful Location Quotient analysis. The location quotient requires 4 values to be calculated, two of which are already present in the original data, while the other two must be appended on and comes from the USA Trade Online website. Another column was added to the dataset that calculates the LQ from the appropriate columns for each row."
 
-footer_data <- "<br><br><br><br><br><font-size = '0.5'>'Limitations: <a href=' https://www.census.gov/foreign-trade/aip/elom.html'> https://www.census.gov/foreign-trade/aip/elom.html</a></font><br>
-Data: https://www.census.gov/foreign-trade/statistics/state/data/exstall.xls<br>
-Data: https://https://usatrade.census.gov"
+footer_data <- "<br><br><br><br><br><font-size = '0.5'>Sources:<br><a href=' https://www.census.gov/foreign-trade/aip/elom.html'>https://www.census.gov/foreign-trade/aip/elom.html</a></font><br>
+<a href='https://www.census.gov/foreign-trade/statistics/state/data/exstall.xls'>https://www.census.gov/foreign-trade/statistics/state/data/exstall.xls</a><br>
+<a href='https://https://usatrade.census.gov'>https://https://usatrade.census.gov</a>"
 
 # This text is for the third tab called Export Values
 evOverview <- "<p>This map displays each US state's export values in millions of dollars.
