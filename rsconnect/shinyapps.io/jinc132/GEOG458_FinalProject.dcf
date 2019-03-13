@@ -5,8 +5,8 @@ account: jinc132
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 786378
-bundleId: 1935831
+bundleId: 1937019
 url: https://jinc132.shinyapps.io/GEOG458_FinalProject/
-when: 1552467050.25956
+when: 1552496403.35939
 asMultiple: FALSE
 asStatic: FALSE
