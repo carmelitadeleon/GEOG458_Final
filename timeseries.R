@@ -1,4 +1,5 @@
-require(rgdal)
+library(rgdal)
+library(maps)
 #install.packages("tmap")
 #install.packages("tmaptools")
 #install.packages("gganimate")
