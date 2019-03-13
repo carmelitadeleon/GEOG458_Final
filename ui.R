@@ -107,7 +107,8 @@ shinyUI(fluidPage(
                   tabPanel("LQ",
                            img(src = "lqmap.png", height = 600, width = 720)),
                   tabPanel("Temporal",
-                           titlePanel("Time Series Map"),
+                           HTML("<p align= 'left' style='padding: 1em 7em 0em 18em'>
+                                <font size= '5'>United States Production Values</font></p>"),
                            # Show a usa state map of yearly exports with high airline productions
                            plotOutput("yearMap", width = "1000px", height = "1000px")
                   ),
