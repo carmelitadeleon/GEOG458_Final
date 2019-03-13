@@ -98,33 +98,11 @@ states is also available, specifically using the %share columns, which show what
 of the overall Civilian Aircraft, Engines & Parts market that city takes account of, and 
 allows you to register the relative growth of a city to itself and then to others.</p>"
 
-tempAnalysis <- "<p>From just the absolute monetary export value, we see Washington dominate
-over everybody, this is to be expected as the largest private producer of Aircraft related utility
-and products of a multi-billion dollar titan, Boeing, rests its wings there in Everett.
-As we go to the %shares, we see that Boeing plays a huge role as a domestic influence
-within Washington as on average 52% of their overall state's total exports pertains to
-the industry that they dominate. If we continue down the line of states where aircraft-related
-products are at the top, we look to the complete opposite side of the country to Connecticut, where
-~41% of their total state exports are derived from this product. <p>Upon a little examination, this
-is not surprising considering, Boeing's peers Barnes Aerospace($750m) & Kaman Aerosystems($620m),
-are both headquartered there along with an U.S Air Force base held in East Granby, CT.
-It is no surprise that these aero-product developers hold the government and the military as
-some of their biggest customers, especially when defense magnate Lockheed Martin bought out
-Sikorsky for $9 billion in 2015. 2015 is an interesting year, because we see the largest jump
-in export value for a number of states. Washington as a standout jumped close to 7%, not to mention
-South Carolina who jumped from ~4% to ~12%, tripling their output value in the span of 1 year,
-and continuing to grab 5% then 2% dividend increments the years following places such as Kansas,
-Kentucky & Arkansas all jumped ~4% with the rest of the top cities all rising at least 1-2%. </p><p> 
-The potential causes of higher aircraft production and output is hard to locate as anything from
-lowered oil tarrifs in the middle east, to intervening in the Syrian Civil War in the middle of
-'15, to lower commercial flight prices across the industry, all could potentially contribute
-to these cities' rising trends. One thing that is more certain is that if we look at cities
-excluding WA for high aircraft-related export, we see a pattern of high-government concentration
-areas, and large defense/military cities this is seen with: <ul><li> Fort Huachuca - AZ</li><li>Eglin</li><li>Macdill</li><li>Patrick & Tyndall
-Air Force Base, FL </li><li>Fort Benning</li><li>Gordan & Stewart</li></ul>These are all in Georgia.
-To add on, it is also no surprise that the high aero-production cities are all
-near a body of water, as not only is it strategically advantageous military wise, but functionally efficient as
-establishing trade and a supply chain to have a naval channel.</p>"
+tempAnalysis <- "<p>From just the absolute monetary export value, it is no surprise that Boeing rules at the top. Even as we go to the %shares, we see that Boeing plays a huge role as a domestic influence within WA,  as on average 52% of their overall state's total exports pertains to the industry that they dominate. If we continue down the line of aero-centric states, we look to the complete opposite side of the country, to Connecticut, where ~41% of their total state exports are derived. Upon further examination, this is not surprising considering, Boeing's peers Barnes Aerospace($750m) & Kaman Aerosystems($620m), are both headquartered there along with, an U.S Air Force base held in East Granby, CT.<br><br>
+  It is no surprise that these aero-product developers hold the government and the military as some of their biggest customers, especially,when defense magnate Lockheed Martin bought out Sikorsky for $9 billion in 2015. 2015 is an interesting year, because we see the largest jump in export value for a number of states. WA, as a standout,jumped close to 7%, not to mention South Carolina who jumped from ~4% to ~12%, tripling their output value in the span of 1 year, and continuing to grab 5% then 2% dividend increments the years following,Places such as Kansas, Kentucky & Arkansas all jumped ~4% with the rest of the top states all rising at least 1-2%. The potential causes of higher aircraft production & output is hard to locate, as anything from aging jet-engines, to a global rising middle class, to a healthy world economic growth spurt, all potentially contribute to the effect.<br><br>
+  One thing that is more certain is that if we look at cities excluding WA, for high aircraft-related export, we see a pattern of large defense/military cities. This is seen with Fort Huachuca,AZ | Eglin,Macdill,Patrick,& Tyndall Air Force Base, FL (Yes 4 bases), Fort Benning, Gordan & Stewart, all in Georgia. Furthermore, just last year, Congress allotted an extra $510m to give the Air Force 3 fresh KC-46, $2.9b for 20 join strike fighters for the Navy & Marine Corps, 9 extra MQ-1 Gray Eagle's for the Army, and many many more. So when you look at it that way, it makes a bit more sense why we're seeing so many new aircrafts flying out in the sky.</p>"
+
+
 
 # This text is for the seventh tab called Bibliography
 interactvBib <- "<li>The <a href='https://github.com/carmelitadeleon/GEOG458_Final/blob/master/InteractiveMap.R'>InteractiveMap.R</a>
