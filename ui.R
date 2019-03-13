@@ -40,13 +40,10 @@ shinyUI(fluidPage(
         condition = "input.tabs == 'Export Values'",
         
         h3("Overview"),
-        tags$div(class="about",
-                 tags$p(evOverview)
-        ),
+        HTML(evOverview),
         
         h3("Analysis"),
-        tags$div(class="analysis",
-                 tags$p(evAnalysis))
+        HTML(evAnalysis)
       ),
       conditionalPanel(
         condition = "input.tabs == 'Export Type'",
@@ -55,29 +52,16 @@ shinyUI(fluidPage(
                     choices = exportTp),
         
         h3("Overview"),
-        tags$div(class="about",
-                 tags$p(prodOverview)
-        ),
+        HTML(prodOverview),
         
         h3("Analysis"),
-        tags$div(class="analysis",
-                 tags$p(prodAnalysisP1,
-                        tags$p(tags$a(href="https://www.flexport.com/data/hs-code/880000-civilian-aircraft-engines-and-parts",
-                                      "FlexPort"),
-                               prodAnalysisP2,
-                               tags$a(href="https://www.cbsa-asfc.gc.ca/publications/dm-md/d10/d10-17-41-eng.pdf",
-                                      "(Canada Border Services Agency)")
-                        )
-                 )
-        ),
+        HTML(prodAnalysis),
         
         h3("Search Export Product"),
         textOutput("hsCode"),
-        tags$div(class="lookup",
-                 tags$p(HTML("<br>"), "For more information regarding this export please look up the HS code",
-                        tags$a(href='https://www.foreign-trade.com/reference/hscode.htm', "here")
-                 )
-        )
+        HTML("<p><br>For more information regarding this export
+             please look up the HS code<a href='https://www.foreign-trade.com/reference/hscode.htm'>here</a>
+             </p>")
       ),
       conditionalPanel(
         condition = "input.tabs == 'LQ'",
@@ -88,7 +72,15 @@ shinyUI(fluidPage(
         
       ),
       conditionalPanel(
-        condition = "input.tabs == 'Temporal'"
+        condition = "input.tabs == 'Temporal'",
+        # Sidebar panel that contains a two number inputs for adjusting the minimum and 
+        # maximum year used in the map
+        sliderInput(inputId = "test", label = h4("Year Range"), min = 2014, 
+                    max = 2017, value = 2014, step = 1, sep =""),
+        h3("Overview"),
+        HTML(tempOverview),
+        h3("Analysis"),
+        HTML(tempAnalysis)
       ),
       conditionalPanel(
         condition = "input.tabs == 'Bibliography'"
@@ -120,52 +112,33 @@ shinyUI(fluidPage(
                   tabPanel("LQ",
                            img(src = "lqmap.png", height = 600, width = 720)),
                   tabPanel("Temporal",
-                           titlePanel("Time Series Map"),
-                           sidebarLayout(
-                             
-                             # Sidebar panel that contains a two number inputs for adjusting the minimum and 
-                             # maximum year used in the map
-                             
-                             
-                             sliderInput(inputId = "test", label = h4("Year Range"), min = 2014, 
-                                         max = 2017, value = 2014, step = 1),
-                             
-                             
-                             
-                             # Show a usa state map of yearly exports with high airline productions
-                             mainPanel(
-                               plotOutput("yearMap", width = "1000px", height = "1000px")
-                             )
-                           )  
+                           HTML("<p align= 'left' style='padding: 1em 7em 0em 18em'>
+                                <font size= '5'>United States Production Values</font></p>"),
+                           # Show a usa state map of yearly exports with high airline productions
+                           plotOutput("yearMap", width = "1000px", height = "1000px")
                   ),
                   tabPanel("Bibliography",
                            h3("Maps"),
-                           tags$div(class="cite",
-                                    tags$p(interactvBib),
-                                    tags$a(href="https://github.com/carmelitadeleon/GEOG458_Final/blob/master/InteractiveMap.R",
-                                           "InteractiveMap.R")
+                           tags$ul(class="cite",
+                                   HTML(interactvBib),
+                                   HTML(timeseriesBib),
+                                   HTML(staticBib)
                            ),
                            h3("Shiny"),
-                           tags$div(class="cite",
-                                    tags$p(serverBib),
-                                    tags$a(href="https://github.com/carmelitadeleon/GEOG458_Final/blob/master/server.R",
-                                           "Server.R"),
-                                    tags$p(uiBib),
-                                    tags$a(href="https://github.com/carmelitadeleon/GEOG458_Final/blob/master/ui.R",
-                                           "UI.R"),
-                                    tags$p(txtBib),
-                                    tags$a(href="https://github.com/carmelitadeleon/GEOG458_Final/blob/master/text.R",
-                                           "Text.R")
+                           tags$ul(class="cite",
+                                   HTML(serverBib),
+                                   HTML(uiBib),
+                                   HTML(txtBib)
                            ),
                            h3("Data"),
-                           tags$div(class="cite",
-                                    tags$p(pythonBib),
-                                    tags$a(href="https://github.com/carmelitadeleon/GEOG458_Final/blob/master/Data_Processing.ipynb",
-                                           "Data_Processing.ipynb")
+                           tags$ul(class="cite",
+                                   HTML(pythonBib),
+                                   HTML(dataBib)
                            )
-                           
                   )
+                  
       )
     )
   )
-))
+)
+)
