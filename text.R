@@ -37,14 +37,14 @@ commodity and its share value in 2017 (the % share the top commodity has out of 
 total exports).</p>"
 
 evAnalysis <- "<p>Based on the map, the top three exporting states are: <ol><li>New York: 15.4462 share value</li><li>
-Texas: 8.7495 share value</li><li>California: 4.1666 share value</ol> While these three states play a major role in the US’
+Texas: 8.7495 share value</li><li>California: 4.1666 share value</ol> While these three states play a major role in the US\'
 exporting economy, the degree to which they rely on their top export as a source of revenue
 varies widely. With this information in mind, it can serve as a basis for additional investigation on
 the diversification of state economies. For instance, why the state and federal government has political
 interests in certain industries, and the perceived importance/relevance of a state on a national
 level.</p><p>In reference to the map, we can observe that states in the Midwest and most of the Western side of the U.S. have a
 lower export value in comparison to the Northeast and Southeast of the U.S - which suggests
-that the East Coast is extremely essential to the US’ exporting economy.</p>"
+that the East Coast is extremely essential to the US\' exporting economy.</p>"
 
 # This text is for the fourth tab called Export Type
 prodOverview <- "<p>The default map shows all 24 export types and the corresponding state
