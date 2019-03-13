@@ -69,8 +69,8 @@ shinyUI(fluidPage(
         h3("Overview"),
         HTML(lqOverview),
         h3("Analysis"),
-        HTML(lqAnalysis)
-        
+        HTML(lqAnalysis),
+        HTML(footer_lq)
       ),
       conditionalPanel(
         condition = "input.tabs == 'Temporal'",
@@ -88,7 +88,7 @@ shinyUI(fluidPage(
       )
     ),
     
-    # Show a plot of the generated distribution
+    # Tabs show a plot of the generated distribution and data overview
     mainPanel(
       tabsetPanel(id = "tabs",
                   tabPanel("Welcome!",
