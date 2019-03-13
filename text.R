@@ -1,3 +1,16 @@
+# This text is for the first tab called Welcome
+intro <- "<b>Exploratory research question:</b> This final research project analyzes the US' state-level export data for the purposes of exploring the variety in exported goods, regional trends in exports, and the financial significance of exports on different spatial scales (state vs national)."
+
+intro2 <- "<br><br><b>What is an export? What is the economic significance of exports?</b><br>
+<ul><li>'An export is a function of international trade whereby goods produced in one country are shipped to another country for future sale or trade. Exports are a crucial component of a country's economy, as the sale of such goods adds to the producing nation's gross output.'<br></li>
+<li>'Most of the largest companies operating in advanced economies derive a substantial portion of their annual revenues from exports to other countries.'</li></ul>"
+
+intro3 <- "<b>Why are we asking this question?</b><br>
+<ul><li>According to research giant Statista, as of 2017, the [United States] is the <a href='https://www.statista.com/statistics/264623/leading-export-countries-worldwide/'>world's second largest exporting country</a> (in terms of dollars). The United States exports approximately $1.5 trillion in primarily capital goods (goods or services that are used as inputs for other businesses to produce <a href='https://www.investopedia.com/terms/c/consumer-goods.asp'>consumer goods</a>).</li>
+<li>Most people understand that consumer goods are produced where labor is cheaper and raw materials/commodities are exported where natural resources are readily available and easily extractable i.e. third world countries.</li>
+<li>However, little is understood about <b>where</b> the US' exported goods originate from and <b>why</b> they originate where they do.</li>
+<li>Our project aims to explore these questions and provide the basis for further investigation and research.</li></ul>"
+
 # This text is for the second tab called Data
 dataOverview <- "   Data we used comes from the US Census Bureau Foreign Trade/ State Trade Data
 and USA Trade Online, which is a trade statistic data repository for the US Census Bureau. The
