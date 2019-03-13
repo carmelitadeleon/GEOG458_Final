@@ -8,7 +8,7 @@ suppressWarnings(warnings)
 #include other necessary files
 source("InteractiveMap.R")
 
-interactvData <- st_read("./data/interactive.shp")
+interactvData <- st_read("data/Interactive.shp")
 
 air_crafts <- st_read("data/Static.shp")
 lat <- c(	39.063946, 	41.597782, 	33.040619, 	33.856892, 	35.565342, 	37.668140, 	34.969704, 	38.526600, 	33.729759, 	43.452492, 	35.630066, 	36.116203, 	44.268543, 	47.400902, 	40.388783, 	27.766279)

@@ -12,7 +12,7 @@ library(sf)
 library(plotly)
 
 # usa base map
-usa <- st_read("./data/cb_2017_us_state_500k.shp")
+usa <- st_read("data/cb_2017_us_state_500k.shp")
 #top states with civic aircrafts dataframe
 #air_crafts <- st_read("data/Static.shp")
 
