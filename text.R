@@ -104,7 +104,6 @@ Air Force Base, FL </li><li>Fort Benning</li><li>Gordan & Stewart</li></ul>These
 To add on, it is also no surprise that the high aero-production cities are all
 near a body of water, as not only is it strategically advantageous military wise, but functionally efficient as
 establishing trade and a supply chain to have a naval channel.</p>"
->>>>>>> 8b7fbe721dcc5188fc89739635a7a50f6e2cea9c
 
 interactvBib <- paste("This repository contains R script that would take in multiple",
                       " parameters to output an interactive map.")
