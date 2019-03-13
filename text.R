@@ -59,7 +59,7 @@ it perhaps the most important export for state economies.</p><p>Recall from the 
 Map the top three exporting states were identified as:<ul><li>California: Civilian aircrafts
 </li><li>Texas: Petroleum</li><li>New York: Diamonds</li></ul>
 Although California\'s top export is civilian aircrafts, it has a low share value of 4.1666.
-This suggests that California\'s exports are well diversified and aircrafts may not be what the state\'s
+This suggests that California\'s exports are well diversified and aircrafts may not be what this state\'s
 export economy is commonly associated with. Similarly, New York\'s top export is cut and shaped diamonds
 and has a very high share value (15.4462). Taking into account of the price and markup of non-industrial diamonds,
 we can deduce that this is the most expensive and popular good that NY exports. Texas\'
