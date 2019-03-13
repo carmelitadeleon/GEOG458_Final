@@ -40,13 +40,10 @@ shinyUI(fluidPage(
         condition = "input.tabs == 'Export Values'",
         
         h3("Overview"),
-        tags$div(class="about",
-                 tags$p(evOverview)
-        ),
+        HTML(evOverview),
         
         h3("Analysis"),
-        tags$div(class="analysis",
-                 tags$p(evAnalysis))
+        HTML(evAnalysis)
       ),
       conditionalPanel(
         condition = "input.tabs == 'Export Type'",
@@ -55,23 +52,16 @@ shinyUI(fluidPage(
                     choices = exportTp),
         
         h3("Overview"),
-        tags$div(class="about",
-                 tags$p(HTML(prodOverview))
-        ),
+        HTML(prodOverview),
         
         h3("Analysis"),
-        tags$div(class="analysis",
-                 tags$p(HTML(prodAnalysis))
-        ),
+        HTML(prodAnalysis),
         
         h3("Search Export Product"),
         textOutput("hsCode"),
-        tags$div(class="lookup",
-                 tags$p(HTML("<br>For more information regarding this export please look up the HS code",
-                        tags$a(href='https://www.foreign-trade.com/reference/hscode.htm', "here")
-                 )
-                 )
-        )
+        HTML("<p><br>For more information regarding this export
+             please look up the HS code<a href='https://www.foreign-trade.com/reference/hscode.htm'>here</a>
+             </p>")
       ),
       conditionalPanel(
         condition = "input.tabs == 'LQ'",
@@ -82,7 +72,15 @@ shinyUI(fluidPage(
         
       ),
       conditionalPanel(
-        condition = "input.tabs == 'Temporal'"
+        condition = "input.tabs == 'Temporal'",
+        # Sidebar panel that contains a two number inputs for adjusting the minimum and 
+        # maximum year used in the map
+        sliderInput(inputId = "test", label = h4("Year Range"), min = 2014, 
+                    max = 2017, value = 2014, step = 1, sep =""),
+        h3("Overview"),
+        HTML(tempOverview),
+        h3("Analysis"),
+        HTML(tempAnalysis)
       ),
       conditionalPanel(
         condition = "input.tabs == 'Bibliography'"
@@ -110,45 +108,31 @@ shinyUI(fluidPage(
                            img(src = "lqmap.png", height = 600, width = 720)),
                   tabPanel("Temporal",
                            titlePanel("Time Series Map"),
-                           sidebarLayout(
-                             
-                             # Sidebar panel that contains a two number inputs for adjusting the minimum and 
-                             # maximum year used in the map
-                             
-                             
-                             sliderInput(inputId = "test", label = h4("Year Range"), min = 2014, 
-                                         max = 2017, value = 2014, step = 1),
-                             
-                             
-                             
-                             # Show a usa state map of yearly exports with high airline productions
-                             mainPanel(
-                               plotOutput("yearMap", width = "1000px", height = "1000px")
-                             )
-                           )  
+                           # Show a usa state map of yearly exports with high airline productions
+                           plotOutput("yearMap", width = "1000px", height = "1000px")
                   ),
                   tabPanel("Bibliography",
                            h3("Maps"),
                            tags$ul(class="cite",
-                                   tags$p(HTML(interactvBib)),
-                                   tags$p(HTML(timeseriesBib)),
-                                   tags$p(HTML(staticBib))
+                                   HTML(interactvBib),
+                                   HTML(timeseriesBib),
+                                   HTML(staticBib)
                            ),
                            h3("Shiny"),
                            tags$ul(class="cite",
-                                    tags$p(HTML(serverBib)),
-                                    tags$p(HTML(uiBib)),
-                                    tags$p(HTML(txtBib))
+                                   HTML(serverBib),
+                                   HTML(uiBib),
+                                   HTML(txtBib)
                            ),
                            h3("Data"),
                            tags$ul(class="cite",
-                                   tags$p(HTML(pythonBib)),
-                                   tags$p(HTML(dataBib))
-                                        
+                                   HTML(pythonBib),
+                                   HTML(dataBib)
                            )
-                           
                   )
+                  
       )
     )
   )
-))
+)
+)
