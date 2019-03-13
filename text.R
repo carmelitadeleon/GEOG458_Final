@@ -1,6 +1,6 @@
 # This text is for the first tab called Welcome
-intro <- "<b>Exploratory research question:</b> This final research project analyzes the US' state-level export data for the purposes of exploring the variety in exported goods, regional trends in exports, and the financial significance of exports on different spatial scales (state vs national)."
-
+intro <- "<b>Exploratory research question:</b>This final research project analyzes the US' state-level export data for the purposes of exploring the variety in exported goods, regional trends in exports, and the financial significance of exports on different spatial scales (state vs national). Through this exploration, we aim to answer the following question: <i>Where do the US' exported goods originate from and why do they originate where they do?</i>"
+  
 intro2 <- "<br><br><b>What is an export? What is the economic significance of exports?</b><br>
 <ul><li>'An export is a function of international trade whereby goods produced in one country are shipped to another country for future sale or trade. Exports are a crucial component of a country's economy, as the sale of such goods adds to the producing nation's gross output.'<br></li>
 <li>'Most of the largest companies operating in advanced economies derive a substantial portion of their annual revenues from exports to other countries.'</li></ul>"
