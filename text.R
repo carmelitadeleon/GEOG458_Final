@@ -79,8 +79,7 @@ lqOverview <- "This map presents a location quotient pertaining to 'civilian air
 <li>To identify emerging export industries beginning to bring money into the region.</li>
 <li>To find endangered export industries that could erode the region's economic base.</li></ul>
 Equation:<br><i><font-size = '2'>LQ = Regional Industry Concentration / National Industry Concentration</font></i><br><br>
-As shown on the map, states that have civilian aircrafts as one of their top exports are displayed on the \"Export Type\" (see the Export Type tab)
-map - there are 16 in total (these states are in labels)."
+As shown on the map, states that have civilian aircrafts as one of their top exports are displayed on the Export Type map (see the Export Type tab) - there are 16 in total (these states are in labels)."
 
 lqAnalysis <- "This map displays the location quotient values for 'civilian aircraft, engines, and parts' exports because it appears most frequently as the top exports among the 50 states & 2 regions. According to the Export Type map, there are 16 states in total that have civilian aircrafts as their top export. 
 
