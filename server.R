@@ -33,10 +33,6 @@ shinyServer(function(input, output) {
   })
   
   # Output the export frequency map
-  output$freqTitle <- renderText({
-    "United States Export Values"
-  })
-  
   output$freqMap <- renderLeaflet({
     CreateInteractvMap(interactvData, 43.82, -118.58,interactvData$State_Tota, interactvData$NAME,
                        "<b>Export Commodity:</b>", interactvData$abbreviatn, interactvData$share17,

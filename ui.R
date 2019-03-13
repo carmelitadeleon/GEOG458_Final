@@ -1,5 +1,7 @@
 library(shiny)
 library(leaflet)
+library(shinythemes)
+#install.packages("shinythemes")
 
 source("server.R")
 source("text.R")
@@ -23,7 +25,7 @@ ui <- fluidPage(
 )
 
 shinyUI(fluidPage(
-  theme = "bootstrap.css",
+  theme = shinytheme("sandstone"),
   tags$h1(class = "display-4", "Exports in the United States"),
   tags$h5("By Kevin, Jin, Alisha, Carmelita, and Billy"),
   
@@ -62,7 +64,8 @@ shinyUI(fluidPage(
         textOutput("hsCode"),
         HTML("<p><br>For more information regarding this export
              please look up the HS code <a href='https://www.foreign-trade.com/reference/hscode.htm'>here</a>
-             </p>")
+             </p>"),
+        HTML(footer_prod)
       ),
       conditionalPanel(
         condition = "input.tabs == 'LQ'",
@@ -105,23 +108,22 @@ shinyUI(fluidPage(
                            HTML(dataProcess),
                            HTML(footer_data)),
                   tabPanel("Export Values",
-                           HTML("<p align= 'left' style='padding: 1em 7em 0em 15em'>
-                                <font size= '5'>United States Export Values</font></p>"),
+                           HTML("<p align= 'left' style='padding: 1em 7em 0em 7em'>
+                                <font size= '5'>United States Export Values from 2014 to 2017</font></p>"),
                            leafletOutput("freqMap", width="720px",height="680px")
                   ),
                   tabPanel("Export Type",
-                           HTML("<p align= 'left' style='padding: 1em 7em 0em 14em'>
-                                <font size= '5'>United States Exporting Products</font></p>"),
-                           leafletOutput("exportMap", width = "720px", height="1000px"),
-                           HTML(prodfooter_intro)
+                           HTML("<p align= 'left' style='padding: 1em 7em 0em 9em'>
+                                <font size= '5'>United States Exporting Products for 2017</font></p>"),
+                           leafletOutput("exportMap", width = "720px", height="1000px")
                   ),
                   tabPanel("LQ",
                            img(src = "lqmap.png", height = 600, width = 720)),
                   tabPanel("Temporal",
                            h3("Overview"),
                            HTML(tempOverview),
-                           HTML("<p align= 'left' style='padding: 1em 7em 0em 18em'>
-                                <font size= '5'>United States Production Values</font></p>"),
+                           HTML("<p align= 'left' style='padding: 1em 7em 0em 6em'>
+                                <font size= '5'>United States Production Values from 2014 to 2017</font></p>"),
                            # Show a usa state map of yearly exports with high airline productions
                            plotOutput("yearMap", width = "850px", height = "620px")
                   ),

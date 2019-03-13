@@ -69,7 +69,7 @@ to the unpredictability/instability of oil markets, the state likely invests sub
 time and effort in protecting its share in the oil markets.</p>"
 
 # footer for the export commodity map
-prodfooter_intro <- "<br><br><br><br>Sources:<br><a href='https://www.foreign-trade.com/reference/hscode.htm'>https://www.foreign-trade.com/reference/hscode.htm</a>"
+footer_prod <- "<br><br><br><br>Sources:<br><a href='https://www.foreign-trade.com/reference/hscode.htm'>https://www.foreign-trade.com/reference/hscode.htm</a>"
 
 # This text is for the fifth tab called LQ
 lqOverview <- "This map presents a location quotient pertaining to civilian aircraft exports in the United States. 
@@ -91,12 +91,12 @@ footer_lq <- "<br><br>Sources:<br><font size='1'><a href='https://www.economicmo
 
 # This text is for the sixth tab called Temporal
 tempOverview <- "<p>This map displays the production value of the United States' top 16
-states for Civilian Aircraft, Engines & Parts, reported in millions of dollars. It
-shows the values for these 16 states across four years : 2014 - 2017, and shows the
-change in export income for these states through these years. Comparison amongst the
-states is also available, specifically using the %share columns, which show what percent
-of the overall Civilian Aircraft, Engines & Parts market that city takes account of, and 
-allows you to register the relative growth of a city to itself and then to others.</p>"
+states for Civilian Aircraft, Engines & Parts which is reported in millions of dollars. It
+shows the values for these 16 states across four years: 2014 - 2017. In likewise fashion the map shows the
+change in export income for these states across the years. A comparison amongst the
+states is also available, specifically using the percent share columns. This comparison displays what percentage
+of the overall Civilian Aircraft, Engines & Parts market is taking account for in the United States. Furthermore, it 
+allows you to grasp the relative growth of a state in comparison to other states.</p>"
 
 tempAnalysis <- "<p>From just the absolute monetary export value, it is no surprise that Boeing rules at the top. Even as we go to the %shares, we see that Boeing plays a huge role as a domestic influence within WA, as on average 52% of their overall state's total exports pertains to the industry that they dominate. If we continue down the line of aero-centric states, we look to the complete opposite side of the country, to Connecticut - where ~41% of their total state exports are derived. Upon further examination, this is not surprising considering, Boeing's peers Barnes Aerospace ($750m) & Kaman Aerosystems ($620m), are both headquartered there along with a U.S. Air Force base held in East Granby, CT.<br><br>
   It is no surprise that these aero-product developers hold the government and the military as some of their biggest customers, especially, when defense magnate Lockheed Martin bought out Sikorsky for $9 billion in 2015. 2015 is an interesting year, because we see the largest jump in export value for several states. WA, as a standout, jumped close to 7%, not to mention South Carolina who jumped from ~4% to ~12%, tripling their output value in the span of 1 year, and continuing to grab 5% then 2% dividend increments the years following. Places such as Kansas, Kentucky & Arkansas all jumped ~4% with the rest of the top states all rising at least 1-2%. The potential causes of higher aircraft production & output is hard to locate, as anything from aging jet-engines, to a global rising middle class, to a healthy world economic growth spurt, all potentially contribute to the effect.<br><br>
@@ -105,7 +105,6 @@ tempAnalysis <- "<p>From just the absolute monetary export value, it is no surpr
 
 footer_temp <- "<br>Sources:<br><font size ='1'>Aircraft Market Influences: <a href ='https://www.sherpareport.com/aircraft/factors-aircraft-demand.html'>https://www.sherpareport.com/aircraft/factors-aircraft-demand.html</a><br>Military Aircraft Manufacturing: <a href='https://www.statista.com/topics/1546/military-aircraft-manufacturing/'>https://www.statista.com/topics/1546/military-aircraft-manufacturing/</a><br>Growing Aircraft Market: <a href='https://www.radical-departures.net/articles/aircraft-market-forecast/'>https://www.radical-departures.net/articles/aircraft-market-forecast/</a><br>
 Military Purchases:<a href='https://www.defensenews.com/air/2018/03/22/the-omnibus-spending-bill-would-add-an-extra-143-aircraft-for-the-military/'>https://www.defensenews.com/air/2018/03/22/the-omnibus-spending-bill-would-add-an-extra-143-aircraft-for-the-military/</a></font>"
-
 
 # This text is for the seventh tab called Bibliography
 interactvBib <- "<li>The <a href='https://github.com/carmelitadeleon/GEOG458_Final/blob/master/InteractiveMap.R'>InteractiveMap.R</a>
@@ -116,7 +115,7 @@ staticBib <- "<li>The <a href='https://github.com/carmelitadeleon/GEOG458_Final/
 of location quotients for civilian aircrafts.</li>"
 
 pythonBib <- "<li>The <a href='https://github.com/carmelitadeleon/GEOG458_Final/blob/master/Data_Processing.ipynb'> Data_Processing.ipynb </a>
-contains python script that processes, cleans, and outputs the data we use to do a closer analysis.</li>"
+contains python script that processes, cleans, and outputs the data we use to do an in-depth analysis.</li>"
 
 serverBib <- "<li>The <a href='https://github.com/carmelitadeleon/GEOG458_Final/blob/master/server.R'>
 server.R</a> contains R script that supports the rendering of the texts and maps.
@@ -127,7 +126,7 @@ contains R script that takes in the user inputs and supports the display of maps
 Moreover, it supports and is the frontend programming of the Shiny App.</li>"
 
 txtBib <- "<li>The <a href='https://github.com/carmelitadeleon/GEOG458_Final/blob/master/text.R'>text.R</a> consists
-of variables that store multilined strings for the purpose of rendering an overview, descriptions, and analysis.</li>"
+of multiple variables that stores multilined strings for the purpose of rendering an overview, descriptions, and the analysis.</li>"
 
 timeseriesBib <- "<li>The <a href='https://github.com/carmelitadeleon/GEOG458_Final/blob/master/timeseries.R'>timeseries.R</a>
 visualizes a map of the change over time of the absolute and relative percentage of the market value from 2014 to 2017.</li>"
