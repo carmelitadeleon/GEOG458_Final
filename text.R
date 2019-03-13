@@ -40,9 +40,8 @@ lqOverview <- "This map presents a location quotient pertaining to civilian craf
                     <li>To identify the 'export orientation' of an industry and the most export-oriented industries in the region.</li>
                     <li>To identify emerging export industries beginning to bring money into the region.</li>
                     <li>To find endangered export industries that could erode the region's economic base.</li></ul>
-Equation:<br><i><font-size = '2'>LQ = Regional Industry Concentration / National Industry Concentration</font></i><br>
-
-                    As shown on the map, states that have aircrafts as their #1 export are displayed in the top exports map - there are 16 in total (these states are in labels).
+Equation:<br><i><font-size = '2'>LQ = Regional Industry Concentration / National Industry Concentration</font></i><br><br>
+As shown on the map, states that have aircrafts as their #1 export are displayed in the top exports map - there are 16 in total (these states are in labels).
                     "
 lqAnalysis <- "The state with the highest location quotient value is Washington state. This makes sense because Boeing was first originated here in Washington state. 
                     <br>"
