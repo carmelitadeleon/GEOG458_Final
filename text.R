@@ -104,7 +104,7 @@ tempAnalysis <- "<p>From just the absolute monetary export value, it is no surpr
   
 
 footer_temp <- "<br>Sources:<br><font size ='1'>Aircraft Market Influences: <a href ='https://www.sherpareport.com/aircraft/factors-aircraft-demand.html'>https://www.sherpareport.com/aircraft/factors-aircraft-demand.html</a><br>Military Aircraft Manufacturing: <a href='https://www.statista.com/topics/1546/military-aircraft-manufacturing/'>https://www.statista.com/topics/1546/military-aircraft-manufacturing/</a><br>Growing Aircraft Market: <a href='https://www.radical-departures.net/articles/aircraft-market-forecast/'>https://www.radical-departures.net/articles/aircraft-market-forecast/</a><br>
-Military Purchases:<a href='https://www.defensenews.com/air/2018/03/22/the-omnibus-spending-bill-would-add-an-extra-143-aircraft-for-the-military/'>https://www.defensenews.com/air/2018/03/22/the-omnibus-spending-bill-would-add-an-extra-143-aircraft-for-the-military/</a></font>"
+Military Purchases: <a href='https://www.defensenews.com/air/2018/03/22/the-omnibus-spending-bill-would-add-an-extra-143-aircraft-for-the-military/'>https://www.defensenews.com/air/2018/03/22/the-omnibus-spending-bill-would-add-an-extra-143-aircraft-for-the-military/</a><br>Table from Data Processing: <a href='https://github.com/carmelitadeleon/GEOG458_Final/blob/master/Data_Processing.ipynb'>Python Notebook</a></font>"
 
 # This text is for the seventh tab called Bibliography
 interactvBib <- "<li>The <a href='https://github.com/carmelitadeleon/GEOG458_Final/blob/master/InteractiveMap.R'>InteractiveMap.R</a>
