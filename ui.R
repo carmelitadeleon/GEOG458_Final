@@ -101,7 +101,12 @@ shinyUI(fluidPage(
                   tabPanel("Welcome!"),
                   tabPanel("Data",
                            h3("Overview"),
-                           h3("Data Processing")),
+                           HTML(dataOverview),
+                           h3("Limitations"),
+                           HTML(dataAnalysis),
+                           h3("Data Processing"),
+                           HTML(dataProcess),
+                           HTML(footer_data)),
                   tabPanel("Export Values",
                            HTML("<p align= 'left' style='padding: 1em 7em 0em 15em'>
                                 <font size= '5'>United States Export Values</font></p>"),
