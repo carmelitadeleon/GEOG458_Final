@@ -53,16 +53,16 @@ that has that as their top export type. To understand each of the export types m
 different commodities through the use of the dropbox, the map will likewise highlight only the
 states that have the selected export type as their top export.</p>"
 
-prodAnalysis <- "<p>The most common top export type is “civilian aircrafts, engines,
-and parts”. These products are exported from 16 different states across the US, making 
+prodAnalysis <- "<p>The most common top export type is 'civilian aircrafts, engines,
+and parts'. These products are exported from 16 different states across the US, making 
 it perhaps the most important export for state economies.</p><p>Recall from the Export Values
 Map the top three exporting states were identified as:<ul><li>California: Civilian aircrafts
 </li><li>Texas: Petroleum</li><li>New York: Diamonds</li></ul>
-Although California’s top export is civilian aircrafts, it has a low share value of 4.1666.
-This suggests that California’s exports are well diversified and aircrafts may not be what the state’s
-export economy is commonly associated with. Similarly, New York’s top export is cut and shaped diamonds
+Although California\'s top export is civilian aircrafts, it has a low share value of 4.1666.
+This suggests that California\'s exports are well diversified and aircrafts may not be what the state\'s
+export economy is commonly associated with. Similarly, New York\'s top export is cut and shaped diamonds
 and has a very high share value (15.4462). Taking into account of the price and markup of non-industrial diamonds,
-we can deduce that this is the most expensive and popular good that NY exports. Texas’
+we can deduce that this is the most expensive and popular good that NY exports. Texas\'
 top export is petroleum, which also has a high share value (8.7495). This means that Texas
 relies more heavily on petroleum in its exporting economy. Nonetheless, due
 to the unpredictability/instability of oil markets, the state likely invests substantial
