@@ -131,7 +131,8 @@ shinyUI(fluidPage(
                            h3("Maps"),
                            tags$ul(class="cite",
                                    tags$p(HTML(interactvBib)),
-                                   tags$p(HTML(timeseriesBib))
+                                   tags$p(HTML(timeseriesBib)),
+                                   tags$p(HTML(staticBib))
                            ),
                            h3("Shiny"),
                            tags$ul(class="cite",
@@ -141,7 +142,9 @@ shinyUI(fluidPage(
                            ),
                            h3("Data"),
                            tags$ul(class="cite",
-                                    tags$p(HTML(pythonBib))
+                                   tags$p(HTML(pythonBib)),
+                                   tags$p(HTML(dataBib))
+                                        
                            )
                            
                   )
