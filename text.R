@@ -11,6 +11,8 @@ intro3 <- "<b>Why are we asking this question?</b><br>
 <li>However, little is understood about <b>where</b> the US' exported goods originate from and <b>why</b> they originate where they do.</li>
 <li>Our project aims to explore these questions and provide the basis for further investigation and research.</li></ul>"
 
+footer_intro <- "<br><br><br><br>Sources:<br><a href='https://www.investopedia.com/terms/e/export.asp'>https://www.investopedia.com/terms/e/export.asp</a><br><a href='https://www.investopedia.com/terms/c/capitalgoods.asp'>https://www.investopedia.com/terms/c/capitalgoods.asp</a><br><a href='https://www.rferl.org/a/why-are-commodity-exporters-in-trouble/27208195.html'>https://www.rferl.org/a/why-are-commodity-exporters-in-trouble/27208195.html</a>"
+
 # This text is for the second tab called Data
 dataOverview <- "   Data we used comes from the US Census Bureau Foreign Trade/ State Trade Data
 and USA Trade Online, which is a trade statistic data repository for the US Census Bureau. The
@@ -20,10 +22,9 @@ total export value from 2014 - 2017. "
 
 dataAnalysis <- "   There are some limitations to the use of this data, which is acknowledged by the Census Bureau, and they include discrepancies between export origin and production origin, non-sampling errors resulting from reporting errors and undocumented shipments, as well as not providing information on a specific company or individual exporting /importing goods due to confidentiality laws. 
 With agricultural crops, for example, the state in which the crop was grown / cultivated is not counted in that state's export if it is shipped to another state for export. In this scenario, the value of the agricultural crop is counted in the exporting state; not in the state in which it was grown. This same concept applies to goods that are produced in one state but stored and exported later by another state.
-Some of the consequences for the discrepancy between production and export origin is that coastal states will have their exports overstated while original production states will have their exports understated. Those original production states that have their exports understated are likely to be landlocked states such as the Midwest. 
-"
+Some of the consequences for the discrepancy between production and export origin is that coastal states will have their exports overstated while original production states will have their exports understated. Those original production states that have their exports understated are likely to be landlocked states such as the Midwest."
 
-dataProcess <- "    Before joining the data to a shapefile of US States, the data needed to be subsetted using a 'select by' logic to include only the top export for each state to avoid a one-to-many relationship and the problems associated with that. We had to further subset the data to include only those states whose top export is Civilian Aircraft in order to do a meaningful Location Quotient analysis. The location quotient requires 4 values to be calculated, two of which are already present in the original data, while the other two must be appended on and comes from the USA Trade Online website. Another column was added to the dataset that calculates the LQ from the appropriate columns for each row. "
+dataProcess <- "    Before joining the data to a shapefile of US States, the data needed to be subsetted using a 'select by' logic to include only the top export for each state to avoid a one-to-many relationship and the problems associated with that. We had to further subset the data to include only those states whose top export is Civilian Aircraft in order to do a meaningful Location Quotient analysis. The location quotient requires 4 values to be calculated, two of which are already present in the original data, while the other two must be appended on and comes from the USA Trade Online website. Another column was added to the dataset that calculates the LQ from the appropriate columns for each row."
 
 footer_data <- "<br><br><br><br><br><font-size = '0.5'>'Limitations: <a href=' https://www.census.gov/foreign-trade/aip/elom.html'> https://www.census.gov/foreign-trade/aip/elom.html</a></font><br>
 Data: https://www.census.gov/foreign-trade/statistics/state/data/exstall.xls<br>
